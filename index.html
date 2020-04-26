@@ -4,14 +4,17 @@
 <head>
   <meta charset='utf-8'>
   <title>explore pokemon</title>
-  <script>
-    window.onload = () => import('./app/index.js');
-  </script>
+  <script type="module" src="/app/index.js"></script>
 
 </head>
 
 <body>
-  <div id='root'></div>
+  <div id='root'>
+    <form>
+      <input id="pokemonId" type="number" />
+      <button id="catch">Catch</button>
+    </form>
+  </div>
 </body>
 
 </html>
